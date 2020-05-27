@@ -55,7 +55,10 @@ set_target_properties( ${PROJECT_NAME} PROPERTIES SOVERSION 0.1 )
 ## project target section
 if( UNIX )
 	set( ${PROJECT_NAME}_DEPENDENCY_LIBS_VAR
-		"" )
+		GL )
+#		GLU )
+#		gl3w
+#		X11 )
 elseif( WIN32 )
 	set( ${PROJECT_NAME}_DEPENDENCY_LIBS_VAR
 		opengl32 )
